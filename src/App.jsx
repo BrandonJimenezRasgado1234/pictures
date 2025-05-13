@@ -13,15 +13,12 @@ const handlesubmit = async(term) => {
   setimages(result)
 
 }
-return{
-    <>
-<h1>pictures app</h1>
-<SearchBar onsubmit=(handlesubmit)/>
-<ImageList images=(images)/>
-    </>
-   
+return (
+  <>
+    <h1>Pictures App</h1>
+    <SearchBar onSubmit={handleSubmit}/>
+    <ImageList images={images}/>
+  </>
+)
 }
-
-}
-
 export default App
